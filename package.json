@@ -5,7 +5,6 @@
   "author": "Sidharth Shamshabad",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server --open --mode development",
@@ -22,10 +21,7 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "^3.5.3",
     "dev-server": "^0.1.0",
-    "enzyme": "^3.11.0",
     "express": "^4.17.1",
-    "jest": "^25.5.2",
-    "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.14.0",
     "normalize.css": "^8.0.1",
@@ -57,6 +53,8 @@
     "babel-loader": "^8.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "enzyme": "^3.11.0",
+    "jest": "^25.5.2"
   }
 }
