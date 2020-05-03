@@ -10,7 +10,8 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server --open --mode development",
     "test": "jest",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "acorn": "^7.1.1",
