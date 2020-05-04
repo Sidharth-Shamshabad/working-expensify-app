@@ -1,15 +1,15 @@
 import * as firebase from 'firebase';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBVyrh1CnxWWMpz2Ge1GwFda5sA95tsYXU",
-    authDomain: "expensify-848da.firebaseapp.com",
-    databaseURL: "https://expensify-848da.firebaseio.com",
-    projectId: "expensify-848da",
-    storageBucket: "expensify-848da.appspot.com",
-    messagingSenderId: "182756410844",
-    appId: "1:182756410844:web:e3d326b4f04df45c8efb19",
-    measurementId: "G-13T0KWG7CY"
-};
+    apiKey: "AIzaSyArRD2nJ26zFNJm0e89zHRW5eykXQjRKt4",
+    authDomain: "cse-214-final-project.firebaseapp.com",
+    databaseURL: "https://cse-214-final-project.firebaseio.com",
+    projectId: "cse-214-final-project",
+    storageBucket: "cse-214-final-project.appspot.com",
+    messagingSenderId: "798576034126",
+    appId: "1:798576034126:web:0bf4e646624c289b791e1f",
+    measurementId: "G-MEMFPLFN2N"
+  };
 
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
