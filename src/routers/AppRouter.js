@@ -15,9 +15,15 @@ const AppRouter = () => (
     <div>
       <Switch>
         <Route path="/" component={LoginPage} exact={true}/>
+<<<<<<< HEAD
         <PrivateRoute path="/dashboard" component={MainDashboardPage}/>
         <PrivateRoute path="/create_exam" component={CreateExamPage}/>
         <PrivateRoute path="/take_exam" component={TakeExamPage}/>
+=======
+        <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} />
+        <PrivateRoute path="/create" component={AddExpensePage} />
+        <PrivateRoute path="/edit/:id" component={EditExpensePage} />
+>>>>>>> a5a3653fe882b37f12c7db2b5263b241011cc52b
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -21,7 +21,9 @@ export default class MultipleChoiceQuestionForm extends React.Component {
                     value={this.state.question}
                 />
                 <input 
-                    
+                    type="text"
+                    placeholder="Option A"
+                    value={this.state.options[0]}
                 />
             </div>
         )
