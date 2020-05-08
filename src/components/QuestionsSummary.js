@@ -24,7 +24,7 @@ export const QuestionsSummary = ({questionCount, questionsTotal}) => {
 };
 
 const mapStateToProps = (state) => {
-    const visibleQuestions = selectQuestions(state.questions);
+    const visibleQuestions = selectQuestions(state.questions, state.filters);
     
     return {
         questionCount: visibleQuestions.length,
