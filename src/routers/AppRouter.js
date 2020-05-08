@@ -1,13 +1,17 @@
 import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import { createBrowserHistory } from 'history'
-import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
-import AddExpensePage from '../components/AddExpensePage';
-import EditExpensePage from '../components/EditExpensePage';
+import CreateExamPage from '../components/CreateExamPage';
+import AddQuestionPage from '../components/AddQuestionPage';
+import EditQuestionPage from '../components/EditQuestionPage';
+import ExamNamePage from '../components/ExamNamePage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
+import TakeExamPage from '../components/TakeExamPage';
+import AvailableExamsPage from '../components/AvailableExamsPage';
+import MainDashboardPage from '../components/MainDashboardPage';
 
 export const history = createBrowserHistory();
 
@@ -16,9 +20,13 @@ const AppRouter = () => (
     <div>
       <Switch>
         <Route path="/" component={LoginPage} exact={true}/>
-        <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} />
-        <PrivateRoute path="/create" component={AddExpensePage} />
-        <PrivateRoute path="/edit/:id" component={EditExpensePage} />
+        <PrivateRoute path="/dashboard" component={MainDashboardPage} />
+        <PrivateRoute path="/exam_name" component={ExamNamePage} exact={true}/>
+        <PrivateRoute path="/create_exam" component={CreateExamPage} />
+        <PrivateRoute path="/create" component={AddQuestionPage} />
+        <PrivateRoute path="/edit/:id" component={EditQuestionPage} />
+        <PrivateRoute path="/available_exams" component={AvailableExamsPage}/>
+        <PrivateRoute path="/take_exam" component={TakeExamPage}/>
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -1,5 +1,5 @@
-export default (expenses) => {
-    return expenses
-        .map((expense) => expense.amount)
+export default (questions) => {
+    return questions
+        .map((question) => question.amount)
         .reduce((sum, value) => sum + value , 0);
 };
